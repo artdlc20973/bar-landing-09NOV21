@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("https://images.pexels.com/photos/1283219/pexels-photo-1283219.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260")
+      no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+}
+
+.logo {
+  word-spacing: 4px;
+  float: left;
+  color: #59fd43;
+  font-size: 1.8em;
+  line-height: 60px;
+  padding: 0 2em;
+}
+
+.menu {
+  float: right;
+  line-height: 60px;
+}
+
+.menu ul {
+  list-style: none;
+}
+
+.menu ul li {
+  display: inline-block;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  color: #59fd43;
+  font-size: 1em;
+  font-weight: lighter;
+  padding: 0 20px;
+}
+
+ul li:nth-child(3) a {
+  background: #59fd43;
+  color: #000;
+  border: #59fd43 1px solid;
+  padding: 6px 25px;
+  border-radius: 5px;
+}
+
+.header {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.header h1 {
+  color: #59fd43;
+  font-size: 3em;
+  font-weight: lighter;
+  -webkit-text-stroke: 0.5px #fff;
+  word-spacing: 5px;
+}
+
+.header p {
+  color: #59fd43;
+  font-size: 1.2em;
+  margin: 0.7em 0;
+  word-spacing: 3px;
+}
+
+.header button {
+  background: #59fd43;
+  color: #000;
+  outline: none;
+  border: none;
+  font-size: 1.3em;
+  padding: 7px 30px;
+  border-radius: 25px;
+  box-shadow: 2px 2px 0 #000;
+}
+
+.header button:hover {
+  background: #308f23;
+  color: #fff;
+  transition: all 0.5s ease-in;
+}
